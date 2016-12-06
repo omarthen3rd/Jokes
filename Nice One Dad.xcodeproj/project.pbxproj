@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AEB353C7EBA5B1B4BC708D5 /* Pods_Nice_One_Dad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA177D65B67E8436B32AF21 /* Pods_Nice_One_Dad.framework */; };
+		566DE5511DF1DA81002DEB2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566DE54F1DF1DA81002DEB2C /* Main.storyboard */; };
 		56AB523A1DE9C5AD001B2D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB52391DE9C5AD001B2D4B /* AppDelegate.swift */; };
 		56AB523C1DE9C5AD001B2D4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB523B1DE9C5AD001B2D4B /* ViewController.swift */; };
-		56AB523F1DE9C5AD001B2D4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56AB523D1DE9C5AD001B2D4B /* Main.storyboard */; };
 		56AB52411DE9C5AD001B2D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56AB52401DE9C5AD001B2D4B /* Assets.xcassets */; };
 		56AB52441DE9C5AD001B2D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56AB52421DE9C5AD001B2D4B /* LaunchScreen.storyboard */; };
 		56AB524F1DE9C5AE001B2D4B /* Nice_One_DadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB524E1DE9C5AE001B2D4B /* Nice_One_DadTests.swift */; };
 		56AB525A1DE9C5AE001B2D4B /* Nice_One_DadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB52591DE9C5AE001B2D4B /* Nice_One_DadUITests.swift */; };
+		56AB52681DE9C5E8001B2D4B /* jokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 56AB52671DE9C5E8001B2D4B /* jokes.json */; };
+		56AB526A1DE9C7DE001B2D4B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AB52691DE9C7DE001B2D4B /* SwiftyJSON.framework */; };
+		56AB526B1DE9C7E5001B2D4B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AB52691DE9C7DE001B2D4B /* SwiftyJSON.framework */; };
+		56AB526C1DE9C7E5001B2D4B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56AB52691DE9C7DE001B2D4B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		56AB526F1DE9C88D001B2D4B /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB526E1DE9C88D001B2D4B /* Jokes.swift */; };
+		56AB52731DE9CC2B001B2D4B /* TitanOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56AB52721DE9CC2B001B2D4B /* TitanOne-Regular.ttf */; };
+		56F274871DE9D54100EEFCCF /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F274861DE9D54100EEFCCF /* DynamicColor.framework */; };
+		56F274891DE9F6D600EEFCCF /* Spring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F274881DE9F6D600EEFCCF /* Spring.framework */; };
+		56F2748A1DE9FEC200EEFCCF /* Spring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F274881DE9F6D600EEFCCF /* Spring.framework */; };
+		56F2748B1DE9FEC200EEFCCF /* Spring.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56F274881DE9F6D600EEFCCF /* Spring.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		56FC273A1DEE50950087686E /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC27391DEE50950087686E /* FavouritesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +45,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		56AB526D1DE9C7E5001B2D4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				56AB526C1DE9C7E5001B2D4B /* SwiftyJSON.framework in Embed Frameworks */,
+				56F2748B1DE9FEC200EEFCCF /* Spring.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18563A5CC345FB2190F3F8F4 /* Pods-Nice One Dad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nice One Dad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad.release.xcconfig"; sourceTree = "<group>"; };
+		2698824F9B1AC32F781939C9 /* Pods-Nice One Dad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nice One Dad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad.debug.xcconfig"; sourceTree = "<group>"; };
+		566DE5501DF1DA81002DEB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56AB52361DE9C5AD001B2D4B /* Nice One Dad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nice One Dad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56AB52391DE9C5AD001B2D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56AB523B1DE9C5AD001B2D4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56AB523E1DE9C5AD001B2D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56AB52401DE9C5AD001B2D4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56AB52431DE9C5AD001B2D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56AB52451DE9C5AD001B2D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +76,14 @@
 		56AB52551DE9C5AE001B2D4B /* Nice One DadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice One DadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56AB52591DE9C5AE001B2D4B /* Nice_One_DadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_One_DadUITests.swift; sourceTree = "<group>"; };
 		56AB525B1DE9C5AE001B2D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56AB52671DE9C5E8001B2D4B /* jokes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jokes.json; sourceTree = "<group>"; };
+		56AB52691DE9C7DE001B2D4B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Developer/Xcode/DerivedData/Nice_One_Dad-didjmnbrdyygiqfqouifkrsffrrw/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		56AB526E1DE9C88D001B2D4B /* Jokes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
+		56AB52721DE9CC2B001B2D4B /* TitanOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitanOne-Regular.ttf"; sourceTree = "<group>"; };
+		56F274861DE9D54100EEFCCF /* DynamicColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicColor.framework; path = "../../../../Developer/Xcode/DerivedData/Nice_One_Dad-didjmnbrdyygiqfqouifkrsffrrw/Build/Products/Debug-iphonesimulator/DynamicColor/DynamicColor.framework"; sourceTree = "<group>"; };
+		56F274881DE9F6D600EEFCCF /* Spring.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spring.framework; path = "../../../../Developer/Xcode/DerivedData/Nice_One_Dad-didjmnbrdyygiqfqouifkrsffrrw/Build/Products/Debug-iphoneos/Spring/Spring.framework"; sourceTree = "<group>"; };
+		56FC27391DEE50950087686E /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
+		9AA177D65B67E8436B32AF21 /* Pods_Nice_One_Dad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nice_One_Dad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +91,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F274891DE9F6D600EEFCCF /* Spring.framework in Frameworks */,
+				56F274871DE9D54100EEFCCF /* DynamicColor.framework in Frameworks */,
+				56AB526A1DE9C7DE001B2D4B /* SwiftyJSON.framework in Frameworks */,
+				2AEB353C7EBA5B1B4BC708D5 /* Pods_Nice_One_Dad.framework in Frameworks */,
+				56AB526B1DE9C7E5001B2D4B /* SwiftyJSON.framework in Frameworks */,
+				56F2748A1DE9FEC200EEFCCF /* Spring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CBD45E8ECA114BF18C84B89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F274881DE9F6D600EEFCCF /* Spring.framework */,
+				56F274861DE9D54100EEFCCF /* DynamicColor.framework */,
+				56AB52691DE9C7DE001B2D4B /* SwiftyJSON.framework */,
+				9AA177D65B67E8436B32AF21 /* Pods_Nice_One_Dad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56AB522D1DE9C5AD001B2D4B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +135,8 @@
 				56AB524D1DE9C5AE001B2D4B /* Nice One DadTests */,
 				56AB52581DE9C5AE001B2D4B /* Nice One DadUITests */,
 				56AB52371DE9C5AD001B2D4B /* Products */,
+				E95FC9F08883AEFF0E36BB00 /* Pods */,
+				0CBD45E8ECA114BF18C84B89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +153,12 @@
 		56AB52381DE9C5AD001B2D4B /* Nice One Dad */ = {
 			isa = PBXGroup;
 			children = (
+				56F2748C1DEA011900EEFCCF /* Jokes */,
 				56AB52391DE9C5AD001B2D4B /* AppDelegate.swift */,
 				56AB523B1DE9C5AD001B2D4B /* ViewController.swift */,
-				56AB523D1DE9C5AD001B2D4B /* Main.storyboard */,
+				56FC27391DEE50950087686E /* FavouritesTableViewController.swift */,
+				56AB52721DE9CC2B001B2D4B /* TitanOne-Regular.ttf */,
+				566DE54F1DF1DA81002DEB2C /* Main.storyboard */,
 				56AB52401DE9C5AD001B2D4B /* Assets.xcassets */,
 				56AB52421DE9C5AD001B2D4B /* LaunchScreen.storyboard */,
 				56AB52451DE9C5AD001B2D4B /* Info.plist */,
@@ -125,6 +184,24 @@
 			path = "Nice One DadUITests";
 			sourceTree = "<group>";
 		};
+		56F2748C1DEA011900EEFCCF /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				56AB526E1DE9C88D001B2D4B /* Jokes.swift */,
+				56AB52671DE9C5E8001B2D4B /* jokes.json */,
+			);
+			name = Jokes;
+			sourceTree = "<group>";
+		};
+		E95FC9F08883AEFF0E36BB00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2698824F9B1AC32F781939C9 /* Pods-Nice One Dad.debug.xcconfig */,
+				18563A5CC345FB2190F3F8F4 /* Pods-Nice One Dad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +209,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56AB525E1DE9C5AE001B2D4B /* Build configuration list for PBXNativeTarget "Nice One Dad" */;
 			buildPhases = (
+				6231C6D74EBED490D3235B57 /* [CP] Check Pods Manifest.lock */,
 				56AB52321DE9C5AD001B2D4B /* Sources */,
 				56AB52331DE9C5AD001B2D4B /* Frameworks */,
 				56AB52341DE9C5AD001B2D4B /* Resources */,
+				C20AEB70F22AAE6A39B4610D /* [CP] Embed Pods Frameworks */,
+				7FB94A85054B54F18A3F46DA /* [CP] Copy Pods Resources */,
+				56AB526D1DE9C7E5001B2D4B /* Embed Frameworks */,
+				565CA8761DEA4ABF00B46D26 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -236,8 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56AB52441DE9C5AD001B2D4B /* LaunchScreen.storyboard in Resources */,
+				566DE5511DF1DA81002DEB2C /* Main.storyboard in Resources */,
+				56AB52731DE9CC2B001B2D4B /* TitanOne-Regular.ttf in Resources */,
 				56AB52411DE9C5AD001B2D4B /* Assets.xcassets in Resources */,
-				56AB523F1DE9C5AD001B2D4B /* Main.storyboard in Resources */,
+				56AB52681DE9C5E8001B2D4B /* jokes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +341,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		565CA8761DEA4ABF00B46D26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+		6231C6D74EBED490D3235B57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB94A85054B54F18A3F46DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20AEB70F22AAE6A39B4610D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56AB52321DE9C5AD001B2D4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				56AB523C1DE9C5AD001B2D4B /* ViewController.swift in Sources */,
+				56FC273A1DEE50950087686E /* FavouritesTableViewController.swift in Sources */,
+				56AB526F1DE9C88D001B2D4B /* Jokes.swift in Sources */,
 				56AB523A1DE9C5AD001B2D4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,10 +446,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		56AB523D1DE9C5AD001B2D4B /* Main.storyboard */ = {
+		566DE54F1DF1DA81002DEB2C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				56AB523E1DE9C5AD001B2D4B /* Base */,
+				566DE5501DF1DA81002DEB2C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -411,12 +558,14 @@
 		};
 		56AB525F1DE9C5AE001B2D4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2698824F9B1AC32F781939C9 /* Pods-Nice One Dad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AEA87WCYYX;
 				INFOPLIST_FILE = "Nice One Dad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.omar.Nice-One-Dad";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omar.niceonedad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,12 +573,14 @@
 		};
 		56AB52601DE9C5AE001B2D4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18563A5CC345FB2190F3F8F4 /* Pods-Nice One Dad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AEA87WCYYX;
 				INFOPLIST_FILE = "Nice One Dad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.omar.Nice-One-Dad";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omar.niceonedad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -512,6 +663,7 @@
 				56AB52601DE9C5AE001B2D4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56AB52611DE9C5AE001B2D4B /* Build configuration list for PBXNativeTarget "Nice One DadTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +672,7 @@
 				56AB52631DE9C5AE001B2D4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56AB52641DE9C5AE001B2D4B /* Build configuration list for PBXNativeTarget "Nice One DadUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +681,7 @@
 				56AB52661DE9C5AE001B2D4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

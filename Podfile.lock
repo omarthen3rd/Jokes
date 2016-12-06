@@ -1,0 +1,33 @@
+PODS:
+  - DynamicColor (3.1.0)
+  - HockeySDK (4.1.2):
+    - HockeySDK/DefaultLib (= 4.1.2)
+  - HockeySDK/DefaultLib (4.1.2)
+  - Spring (1.0.3)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - DynamicColor (~> 3.1.0)
+  - HockeySDK (~> 4.1.2)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  DynamicColor: 4dec283a881f7f9d9f3bc88fb5f306724242575f
+  HockeySDK: c7523379550a4305cefc1cdfa7b5f9a5a3538180
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: 874050ea73b00cd9df956682579ecf7e868d925d
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56228E2B202DF11D00D7C8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E2A202DF11D00D7C8FE /* AppDelegate.swift */; };
+		56228E2D202DF11D00D7C8FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E2C202DF11D00D7C8FE /* ViewController.swift */; };
+		56228E30202DF11D00D7C8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56228E2E202DF11D00D7C8FE /* Main.storyboard */; };
+		56228E32202DF11D00D7C8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56228E31202DF11D00D7C8FE /* Assets.xcassets */; };
+		56228E35202DF11D00D7C8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56228E33202DF11D00D7C8FE /* LaunchScreen.storyboard */; };
+		56228E40202DF11D00D7C8FE /* Nice_One_DadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E3F202DF11D00D7C8FE /* Nice_One_DadTests.swift */; };
+		56228E4B202DF11D00D7C8FE /* Nice_One_DadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E4A202DF11D00D7C8FE /* Nice_One_DadUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56228E3C202DF11D00D7C8FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56228E1F202DF11D00D7C8FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56228E26202DF11D00D7C8FE;
+			remoteInfo = "Nice One Dad";
+		};
+		56228E47202DF11D00D7C8FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56228E1F202DF11D00D7C8FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56228E26202DF11D00D7C8FE;
+			remoteInfo = "Nice One Dad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56228E27202DF11D00D7C8FE /* Nice One Dad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nice One Dad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56228E2A202DF11D00D7C8FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56228E2C202DF11D00D7C8FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56228E2F202DF11D00D7C8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56228E31202DF11D00D7C8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56228E34202DF11D00D7C8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56228E36202DF11D00D7C8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56228E3B202DF11D00D7C8FE /* Nice One DadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice One DadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56228E3F202DF11D00D7C8FE /* Nice_One_DadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_One_DadTests.swift; sourceTree = "<group>"; };
+		56228E41202DF11D00D7C8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56228E46202DF11D00D7C8FE /* Nice One DadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice One DadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56228E4A202DF11D00D7C8FE /* Nice_One_DadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_One_DadUITests.swift; sourceTree = "<group>"; };
+		56228E4C202DF11D00D7C8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56228E24202DF11D00D7C8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56228E38202DF11D00D7C8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56228E43202DF11D00D7C8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56228E1E202DF11D00D7C8FE = {
+			isa = PBXGroup;
+			children = (
+				56228E29202DF11D00D7C8FE /* Nice One Dad */,
+				56228E3E202DF11D00D7C8FE /* Nice One DadTests */,
+				56228E49202DF11D00D7C8FE /* Nice One DadUITests */,
+				56228E28202DF11D00D7C8FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56228E28202DF11D00D7C8FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56228E27202DF11D00D7C8FE /* Nice One Dad.app */,
+				56228E3B202DF11D00D7C8FE /* Nice One DadTests.xctest */,
+				56228E46202DF11D00D7C8FE /* Nice One DadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56228E29202DF11D00D7C8FE /* Nice One Dad */ = {
+			isa = PBXGroup;
+			children = (
+				56228E2A202DF11D00D7C8FE /* AppDelegate.swift */,
+				56228E2C202DF11D00D7C8FE /* ViewController.swift */,
+				56228E2E202DF11D00D7C8FE /* Main.storyboard */,
+				56228E31202DF11D00D7C8FE /* Assets.xcassets */,
+				56228E33202DF11D00D7C8FE /* LaunchScreen.storyboard */,
+				56228E36202DF11D00D7C8FE /* Info.plist */,
+			);
+			path = "Nice One Dad";
+			sourceTree = "<group>";
+		};
+		56228E3E202DF11D00D7C8FE /* Nice One DadTests */ = {
+			isa = PBXGroup;
+			children = (
+				56228E3F202DF11D00D7C8FE /* Nice_One_DadTests.swift */,
+				56228E41202DF11D00D7C8FE /* Info.plist */,
+			);
+			path = "Nice One DadTests";
+			sourceTree = "<group>";
+		};
+		56228E49202DF11D00D7C8FE /* Nice One DadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56228E4A202DF11D00D7C8FE /* Nice_One_DadUITests.swift */,
+				56228E4C202DF11D00D7C8FE /* Info.plist */,
+			);
+			path = "Nice One DadUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56228E26202DF11D00D7C8FE /* Nice One Dad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56228E4F202DF11D00D7C8FE /* Build configuration list for PBXNativeTarget "Nice One Dad" */;
+			buildPhases = (
+				56228E23202DF11D00D7C8FE /* Sources */,
+				56228E24202DF11D00D7C8FE /* Frameworks */,
+				56228E25202DF11D00D7C8FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nice One Dad";
+			productName = "Nice One Dad";
+			productReference = 56228E27202DF11D00D7C8FE /* Nice One Dad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56228E3A202DF11D00D7C8FE /* Nice One DadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56228E52202DF11D00D7C8FE /* Build configuration list for PBXNativeTarget "Nice One DadTests" */;
+			buildPhases = (
+				56228E37202DF11D00D7C8FE /* Sources */,
+				56228E38202DF11D00D7C8FE /* Frameworks */,
+				56228E39202DF11D00D7C8FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56228E3D202DF11D00D7C8FE /* PBXTargetDependency */,
+			);
+			name = "Nice One DadTests";
+			productName = "Nice One DadTests";
+			productReference = 56228E3B202DF11D00D7C8FE /* Nice One DadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56228E45202DF11D00D7C8FE /* Nice One DadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56228E55202DF11D00D7C8FE /* Build configuration list for PBXNativeTarget "Nice One DadUITests" */;
+			buildPhases = (
+				56228E42202DF11D00D7C8FE /* Sources */,
+				56228E43202DF11D00D7C8FE /* Frameworks */,
+				56228E44202DF11D00D7C8FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56228E48202DF11D00D7C8FE /* PBXTargetDependency */,
+			);
+			name = "Nice One DadUITests";
+			productName = "Nice One DadUITests";
+			productReference = 56228E46202DF11D00D7C8FE /* Nice One DadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56228E1F202DF11D00D7C8FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Omar Abbasi";
+				TargetAttributes = {
+					56228E26202DF11D00D7C8FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					56228E3A202DF11D00D7C8FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56228E26202DF11D00D7C8FE;
+					};
+					56228E45202DF11D00D7C8FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56228E26202DF11D00D7C8FE;
+					};
+				};
+			};
+			buildConfigurationList = 56228E22202DF11D00D7C8FE /* Build configuration list for PBXProject "Nice One Dad" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56228E1E202DF11D00D7C8FE;
+			productRefGroup = 56228E28202DF11D00D7C8FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56228E26202DF11D00D7C8FE /* Nice One Dad */,
+				56228E3A202DF11D00D7C8FE /* Nice One DadTests */,
+				56228E45202DF11D00D7C8FE /* Nice One DadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56228E25202DF11D00D7C8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56228E35202DF11D00D7C8FE /* LaunchScreen.storyboard in Resources */,
+				56228E32202DF11D00D7C8FE /* Assets.xcassets in Resources */,
+				56228E30202DF11D00D7C8FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56228E39202DF11D00D7C8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56228E44202DF11D00D7C8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56228E23202DF11D00D7C8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56228E2D202DF11D00D7C8FE /* ViewController.swift in Sources */,
+				56228E2B202DF11D00D7C8FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56228E37202DF11D00D7C8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56228E40202DF11D00D7C8FE /* Nice_One_DadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56228E42202DF11D00D7C8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56228E4B202DF11D00D7C8FE /* Nice_One_DadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56228E3D202DF11D00D7C8FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56228E26202DF11D00D7C8FE /* Nice One Dad */;
+			targetProxy = 56228E3C202DF11D00D7C8FE /* PBXContainerItemProxy */;
+		};
+		56228E48202DF11D00D7C8FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56228E26202DF11D00D7C8FE /* Nice One Dad */;
+			targetProxy = 56228E47202DF11D00D7C8FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56228E2E202DF11D00D7C8FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56228E2F202DF11D00D7C8FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56228E33202DF11D00D7C8FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56228E34202DF11D00D7C8FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56228E4D202DF11D00D7C8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56228E4E202DF11D00D7C8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56228E50202DF11D00D7C8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CSTNGA4CB;
+				INFOPLIST_FILE = "Nice One Dad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-Dad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56228E51202DF11D00D7C8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CSTNGA4CB;
+				INFOPLIST_FILE = "Nice One Dad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-Dad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56228E53202DF11D00D7C8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CSTNGA4CB;
+				INFOPLIST_FILE = "Nice One DadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-DadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nice One Dad.app/Nice One Dad";
+			};
+			name = Debug;
+		};
+		56228E54202DF11D00D7C8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CSTNGA4CB;
+				INFOPLIST_FILE = "Nice One DadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-DadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nice One Dad.app/Nice One Dad";
+			};
+			name = Release;
+		};
+		56228E56202DF11D00D7C8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CSTNGA4CB;
+				INFOPLIST_FILE = "Nice One DadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-DadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nice One Dad";
+			};
+			name = Debug;
+		};
+		56228E57202DF11D00D7C8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CSTNGA4CB;
+				INFOPLIST_FILE = "Nice One DadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-DadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nice One Dad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56228E22202DF11D00D7C8FE /* Build configuration list for PBXProject "Nice One Dad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56228E4D202DF11D00D7C8FE /* Debug */,
+				56228E4E202DF11D00D7C8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56228E4F202DF11D00D7C8FE /* Build configuration list for PBXNativeTarget "Nice One Dad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56228E50202DF11D00D7C8FE /* Debug */,
+				56228E51202DF11D00D7C8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56228E52202DF11D00D7C8FE /* Build configuration list for PBXNativeTarget "Nice One DadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56228E53202DF11D00D7C8FE /* Debug */,
+				56228E54202DF11D00D7C8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56228E55202DF11D00D7C8FE /* Build configuration list for PBXNativeTarget "Nice One DadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56228E56202DF11D00D7C8FE /* Debug */,
+				56228E57202DF11D00D7C8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56228E1F202DF11D00D7C8FE /* Project object */;
+}

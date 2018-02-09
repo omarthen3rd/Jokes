@@ -14,6 +14,9 @@
 		56228E35202DF11D00D7C8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56228E33202DF11D00D7C8FE /* LaunchScreen.storyboard */; };
 		56228E40202DF11D00D7C8FE /* Nice_One_DadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E3F202DF11D00D7C8FE /* Nice_One_DadTests.swift */; };
 		56228E4B202DF11D00D7C8FE /* Nice_One_DadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E4A202DF11D00D7C8FE /* Nice_One_DadUITests.swift */; };
+		56228E5B202DF15B00D7C8FE /* jokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 56228E59202DF15B00D7C8FE /* jokes.json */; };
+		56228E5F202DF4C700D7C8FE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E5E202DF4C700D7C8FE /* SwiftyJSON.swift */; };
+		56E0D48F202E0487008BA2BD /* TitanOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E0D48E202E0487008BA2BD /* TitanOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		56228E46202DF11D00D7C8FE /* Nice One DadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice One DadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56228E4A202DF11D00D7C8FE /* Nice_One_DadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_One_DadUITests.swift; sourceTree = "<group>"; };
 		56228E4C202DF11D00D7C8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56228E59202DF15B00D7C8FE /* jokes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jokes.json; sourceTree = "<group>"; };
+		56228E5E202DF4C700D7C8FE /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		56E0D48E202E0487008BA2BD /* TitanOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitanOne-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		56228E29202DF11D00D7C8FE /* Nice One Dad */ = {
 			isa = PBXGroup;
 			children = (
+				56E0D490202E04A1008BA2BD /* Resources */,
 				56228E2A202DF11D00D7C8FE /* AppDelegate.swift */,
 				56228E2C202DF11D00D7C8FE /* ViewController.swift */,
 				56228E2E202DF11D00D7C8FE /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				56228E4C202DF11D00D7C8FE /* Info.plist */,
 			);
 			path = "Nice One DadUITests";
+			sourceTree = "<group>";
+		};
+		56E0D490202E04A1008BA2BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56228E5E202DF4C700D7C8FE /* SwiftyJSON.swift */,
+				56228E59202DF15B00D7C8FE /* jokes.json */,
+				56E0D48E202E0487008BA2BD /* TitanOne-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E0D48F202E0487008BA2BD /* TitanOne-Regular.ttf in Resources */,
 				56228E35202DF11D00D7C8FE /* LaunchScreen.storyboard in Resources */,
 				56228E32202DF11D00D7C8FE /* Assets.xcassets in Resources */,
+				56228E5B202DF15B00D7C8FE /* jokes.json in Resources */,
 				56228E30202DF11D00D7C8FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56228E5F202DF4C700D7C8FE /* SwiftyJSON.swift in Sources */,
 				56228E2D202DF11D00D7C8FE /* ViewController.swift in Sources */,
 				56228E2B202DF11D00D7C8FE /* AppDelegate.swift in Sources */,
 			);
@@ -429,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CSTNGA4CB;
 				INFOPLIST_FILE = "Nice One Dad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-Dad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CSTNGA4CB;
 				INFOPLIST_FILE = "Nice One Dad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omarabbasi.Nice-One-Dad";
 				PRODUCT_NAME = "$(TARGET_NAME)";

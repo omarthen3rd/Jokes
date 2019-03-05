@@ -34,6 +34,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>TitanOne-Regular.ttf</string>
+		<string>luckiestguy.ttf</string>
+		<string>Lemon-Regular.ttf</string>
+		<string>RammettoOne-Regular.ttf</string>
+		<string>SansitaOne.ttf</string>
+		<string>Chango-Regular.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

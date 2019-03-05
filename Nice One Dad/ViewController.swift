@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 struct Joke {
     
     let setup: String
     let punchline: String
+    
+}
+
+extension Array{
+    
+    func random() -> Element {
+        return self[Int(arc4random_uniform(UInt32(self.count)))]
+    }
     
 }
 
@@ -28,15 +37,6 @@ extension NSMutableAttributedString {
         if range.location != NSNotFound {
             addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range)
         }
-    }
-    
-    func boldTextIn(_ range: NSRange, size: CGFloat) {
-        
-        if range.location != NSNotFound {
-            let attrs = [NSAttributedStringKey.font : UIFont(name: "NotoSerif-Bold", size: size)]
-            addAttributes(attrs, range: range)
-        }
-        
     }
     
     func setSizeForText(_ textToFind: String, with font: UIFont) {
@@ -95,21 +95,9 @@ extension UILabel {
     
 }
 
-extension UIColor {
-    
-    static let darkBackgroundColor = UIColor(red:0.18, green:0.21, blue:0.26, alpha:1.0) // #2f3542
-    static let darkTextColor = UIColor(red:0.95, green:0.95, blue:0.96, alpha:1.0) // #f1f2f6
-    static let darkTintColor = UIColor(red:0.64, green:0.69, blue:0.75, alpha:1.0) // #a4b0be
-    
-    static let lightBackgroundColor = UIColor(red:0.99, green:0.99, blue:0.99, alpha:1.0) // #FCFCFC
-    static let lightTextColor = UIColor(red:0.27, green:0.27, blue:0.27, alpha:1.0) // #464646
-    static let lightTintColor = UIColor.gray // gray ¯\_(ツ)_/¯
-    
-}
-
 class ViewController: UIViewController {
     
-    @IBOutlet var jokeLabel: UILabel!
+    @IBOutlet var jokeView: UITextView!
     @IBOutlet var browse: UIButton!
     @IBOutlet var heart: UIButton!
     @IBOutlet var random: UIButton!
@@ -117,8 +105,13 @@ class ViewController: UIViewController {
     
     var jokesLocal = [Joke]()
     var jokesRemote = [Joke]()
+    var jokesFinal = [Joke]()
+    var currentJoke: Joke!
+    var jokeString = String()
+    var contrast = UIColor()
     var newIndex = 0
-
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -127,9 +120,12 @@ class ViewController: UIViewController {
         fetchRemoteJokes { (success) in
             if success {
                 
-                let jokesFinal = self.jokesLocal + self.jokesRemote
+                self.jokesFinal = self.jokesLocal + self.jokesRemote
+                self.loadRandomJoke()
                 
-                self.loadRandomJoke(jokesFinal)
+            } else {
+                
+                self.jokesFinal = self.jokesLocal
                 
             }
         }
@@ -145,28 +141,73 @@ class ViewController: UIViewController {
         
         let favouritesImage = #imageLiteral(resourceName: "happyHeart").withRenderingMode(.alwaysTemplate)
         heart.setImage(favouritesImage, for: .normal)
-        heart.tintColor = UIColor.gray
-        heart.imageView?.tintColor = UIColor.gray
         heart.contentMode = .scaleAspectFit
         heart.imageView?.contentMode = .scaleAspectFit
         
         let randomImage = #imageLiteral(resourceName: "shuffle").withRenderingMode(.alwaysTemplate)
         random.setImage(randomImage, for: .normal)
-        random.tintColor = UIColor.gray
-        random.imageView?.tintColor = UIColor.gray
         random.imageView?.contentMode = .scaleAspectFit
         
         let browseImage = #imageLiteral(resourceName: "browse").withRenderingMode(.alwaysTemplate)
         browse.setImage(browseImage, for: .normal)
-        browse.tintColor = UIColor.gray
-        browse.imageView?.tintColor = UIColor.gray
         browse.imageView?.contentMode = .scaleAspectFit
         
         let settingsImage = #imageLiteral(resourceName: "settings").withRenderingMode(.alwaysTemplate)
         settings.setImage(settingsImage, for: .normal)
-        settings.tintColor = UIColor.gray
-        settings.imageView?.tintColor = UIColor.gray
         settings.imageView?.contentMode = .scaleAspectFit
+        
+        random.addTarget(self, action: #selector(loadRandomJoke), for: .touchUpInside)
+        
+    }
+    
+    func setTint(with color: UIColor) {
+        
+        view.backgroundColor = color
+        
+        contrast = ContrastColorOf(color, returnFlat: true)
+        let tintColor = contrast.withAlphaComponent(0.5)
+        
+        setStatusBarStyle(UIStatusBarStyleContrast)
+        
+        jokeView.textColor = contrast
+        
+        heart.tintColor = tintColor
+        heart.imageView?.tintColor = tintColor
+        
+        random.tintColor = tintColor
+        random.imageView?.tintColor = tintColor
+        
+        browse.tintColor = tintColor
+        browse.imageView?.tintColor = tintColor
+        
+        settings.tintColor = tintColor
+        settings.imageView?.tintColor = tintColor
+        
+    }
+    
+    func setFont() {
+        
+        // getFontNames()
+        let fonts = ["LuckiestGuy-Regular", "TitanOne", "Chango-Regular", "RammettoOne-Regular", "Lemon-Regular", "SansitaOne"]
+        let randomIndex = Int(arc4random_uniform(UInt32(fonts.count)))
+        let fontString = fonts[randomIndex]
+        let font = UIFont(name: fontString, size: 30)
+        
+        let text = jokeString
+        let range = NSRange(location: 0, length: (text as NSString).length)
+        
+        let attrString = NSMutableAttributedString(string: text)
+        attrString.addAttribute(NSAttributedStringKey.font, value: font!, range: range)
+        attrString.setColorForRange(range, with: contrast)
+        jokeView.attributedText = attrString
+        
+    }
+    
+    func getFontNames() {
+        
+        for name in UIFont.familyNames {
+            print(UIFont.fontNames(forFamilyName: name))
+        }
         
     }
     
@@ -239,25 +280,41 @@ class ViewController: UIViewController {
         
     }
     
-    func loadRandomJoke(_ jokes: [Joke]) {
+    @objc func loadRandomJoke() {
         
-        var newJoke: Joke
+        let jokes = jokesFinal
         
-        let randomIndex = Int(arc4random_uniform(UInt32(jokes.count)))
-        if newIndex == randomIndex {
-            
-            let newRandomIndex = Int(arc4random_uniform(UInt32(jokes.count)))
-            newJoke = jokes[newRandomIndex]
-            
-        } else {
-            
-            let newIndex = randomIndex
-            loadRandomJoke(jokes)
-            
+        let newJoke = jokes.random()
+        currentJoke = newJoke
+        
+        jokeString = newJoke.setup + "\n\n" + newJoke.punchline
+        
+        DispatchQueue.main.async {
+            let bgColor = UIColor.randomFlat
+            self.setTint(with: bgColor)
+            self.setFont()
+            self.jokeView.centerVertically()
         }
-        newJoke = jokes[randomIndex]
         
-        jokeLabel.text = newJoke.setup + "\n\n" + newJoke.punchline
+    }
+    
+    func isInFavourites() -> Bool {
+        
+        let favouritesExist = defaults.object(forKey: "favourites") != nil
+        
+        if favouritesExist {
+            
+            guard let joke = currentJoke else { return false }
+            guard let decodedArr = defaults.object(forKey: "favourites") as? Data else { return false }
+            guard let decodedJokes = NSKeyedUnarchiver.unarchiveObject(with: decodedArr) as? [Joke] else { return false }
+            if (decodedJokes.contains(where: { $0.setup == joke.setup } )) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
         
     }
 

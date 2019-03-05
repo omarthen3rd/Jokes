@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1190E592A48FA1F3C1EB1DCD /* Pods_Nice_One_Dad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD19168736BD267EA57A0FB /* Pods_Nice_One_Dad.framework */; };
 		56228E2B202DF11D00D7C8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E2A202DF11D00D7C8FE /* AppDelegate.swift */; };
 		56228E2D202DF11D00D7C8FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E2C202DF11D00D7C8FE /* ViewController.swift */; };
 		56228E30202DF11D00D7C8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56228E2E202DF11D00D7C8FE /* Main.storyboard */; };
@@ -17,6 +18,12 @@
 		56228E5B202DF15B00D7C8FE /* jokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 56228E59202DF15B00D7C8FE /* jokes.json */; };
 		56228E5F202DF4C700D7C8FE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56228E5E202DF4C700D7C8FE /* SwiftyJSON.swift */; };
 		56E0D48F202E0487008BA2BD /* TitanOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E0D48E202E0487008BA2BD /* TitanOne-Regular.ttf */; };
+		56E50147202E08CD00CE0B72 /* ChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E50148202E08CD00CE0B72 /* ChameleonFramework.framework */; };
+		56E5014A202E0DF400CE0B72 /* luckiestguy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E50149202E0DF400CE0B72 /* luckiestguy.ttf */; };
+		56E5014C202E178100CE0B72 /* Lemon-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E5014B202E178000CE0B72 /* Lemon-Regular.ttf */; };
+		56E5014E202E17CA00CE0B72 /* RammettoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E5014D202E17CA00CE0B72 /* RammettoOne-Regular.ttf */; };
+		56E50150202E180700CE0B72 /* SansitaOne.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E5014F202E180700CE0B72 /* SansitaOne.ttf */; };
+		56E50152202E181200CE0B72 /* Chango-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E50151202E181200CE0B72 /* Chango-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		56E50146202E08A500CE0B72 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		000B601A6C6400E7787062D4 /* Pods-Nice One Dad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nice One Dad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad.release.xcconfig"; sourceTree = "<group>"; };
+		3CD19168736BD267EA57A0FB /* Pods_Nice_One_Dad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nice_One_Dad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56228E27202DF11D00D7C8FE /* Nice One Dad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nice One Dad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56228E2A202DF11D00D7C8FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56228E2C202DF11D00D7C8FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +75,13 @@
 		56228E59202DF15B00D7C8FE /* jokes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jokes.json; sourceTree = "<group>"; };
 		56228E5E202DF4C700D7C8FE /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		56E0D48E202E0487008BA2BD /* TitanOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitanOne-Regular.ttf"; sourceTree = "<group>"; };
+		56E50148202E08CD00CE0B72 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E50149202E0DF400CE0B72 /* luckiestguy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = luckiestguy.ttf; sourceTree = "<group>"; };
+		56E5014B202E178000CE0B72 /* Lemon-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lemon-Regular.ttf"; sourceTree = "<group>"; };
+		56E5014D202E17CA00CE0B72 /* RammettoOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RammettoOne-Regular.ttf"; sourceTree = "<group>"; };
+		56E5014F202E180700CE0B72 /* SansitaOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SansitaOne.ttf; sourceTree = "<group>"; };
+		56E50151202E181200CE0B72 /* Chango-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chango-Regular.ttf"; sourceTree = "<group>"; };
+		7C56054DEDC9B1D9C21E6F46 /* Pods-Nice One Dad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nice One Dad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E50147202E08CD00CE0B72 /* ChameleonFramework.framework in Frameworks */,
+				1190E592A48FA1F3C1EB1DCD /* Pods_Nice_One_Dad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081F912672DC14F6055C0E5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E50148202E08CD00CE0B72 /* ChameleonFramework.framework */,
+				3CD19168736BD267EA57A0FB /* Pods_Nice_One_Dad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56228E1E202DF11D00D7C8FE = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +127,8 @@
 				56228E3E202DF11D00D7C8FE /* Nice One DadTests */,
 				56228E49202DF11D00D7C8FE /* Nice One DadUITests */,
 				56228E28202DF11D00D7C8FE /* Products */,
+				C14DF4064C01B4BE3C2E5E22 /* Pods */,
+				081F912672DC14F6055C0E5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,8 +180,22 @@
 				56228E5E202DF4C700D7C8FE /* SwiftyJSON.swift */,
 				56228E59202DF15B00D7C8FE /* jokes.json */,
 				56E0D48E202E0487008BA2BD /* TitanOne-Regular.ttf */,
+				56E50149202E0DF400CE0B72 /* luckiestguy.ttf */,
+				56E5014B202E178000CE0B72 /* Lemon-Regular.ttf */,
+				56E5014D202E17CA00CE0B72 /* RammettoOne-Regular.ttf */,
+				56E5014F202E180700CE0B72 /* SansitaOne.ttf */,
+				56E50151202E181200CE0B72 /* Chango-Regular.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C14DF4064C01B4BE3C2E5E22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C56054DEDC9B1D9C21E6F46 /* Pods-Nice One Dad.debug.xcconfig */,
+				000B601A6C6400E7787062D4 /* Pods-Nice One Dad.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +205,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56228E4F202DF11D00D7C8FE /* Build configuration list for PBXNativeTarget "Nice One Dad" */;
 			buildPhases = (
+				58FDFA9F5FBAE1B1C9C50B8A /* [CP] Check Pods Manifest.lock */,
 				56228E23202DF11D00D7C8FE /* Sources */,
 				56228E24202DF11D00D7C8FE /* Frameworks */,
 				56228E25202DF11D00D7C8FE /* Resources */,
+				9665DE9B0E1CA9691467FC5D /* [CP] Embed Pods Frameworks */,
+				C2CF596F8F5F77A0F6DE4428 /* [CP] Copy Pods Resources */,
+				56E50146202E08A500CE0B72 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,9 +309,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E50150202E180700CE0B72 /* SansitaOne.ttf in Resources */,
+				56E5014A202E0DF400CE0B72 /* luckiestguy.ttf in Resources */,
+				56E5014C202E178100CE0B72 /* Lemon-Regular.ttf in Resources */,
 				56E0D48F202E0487008BA2BD /* TitanOne-Regular.ttf in Resources */,
 				56228E35202DF11D00D7C8FE /* LaunchScreen.storyboard in Resources */,
 				56228E32202DF11D00D7C8FE /* Assets.xcassets in Resources */,
+				56E5014E202E17CA00CE0B72 /* RammettoOne-Regular.ttf in Resources */,
+				56E50152202E181200CE0B72 /* Chango-Regular.ttf in Resources */,
 				56228E5B202DF15B00D7C8FE /* jokes.json in Resources */,
 				56228E30202DF11D00D7C8FE /* Main.storyboard in Resources */,
 			);
@@ -272,6 +337,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58FDFA9F5FBAE1B1C9C50B8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nice One Dad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9665DE9B0E1CA9691467FC5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2CF596F8F5F77A0F6DE4428 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nice One Dad/Pods-Nice One Dad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56228E23202DF11D00D7C8FE /* Sources */ = {
@@ -444,6 +563,7 @@
 		};
 		56228E50202DF11D00D7C8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C56054DEDC9B1D9C21E6F46 /* Pods-Nice One Dad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +580,7 @@
 		};
 		56228E51202DF11D00D7C8FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000B601A6C6400E7787062D4 /* Pods-Nice One Dad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

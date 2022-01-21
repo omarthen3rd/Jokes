@@ -11,16 +11,8 @@ import ChameleonFramework
 
 struct Joke {
     
-    let setup: String
-    let punchline: String
-    
-}
-
-extension Array{
-    
-    func random() -> Element {
-        return self[Int(arc4random_uniform(UInt32(self.count)))]
-    }
+    let id: String
+    let joke: String
     
 }
 
@@ -49,21 +41,6 @@ extension NSMutableAttributedString {
     }
     
 }
-
-extension String {
-    
-    func countInstances(of stringToFind: String) -> Int {
-        var stringToSearch = self
-        var count = 0
-        while let foundRange = stringToSearch.range(of: stringToFind, options: .diacriticInsensitive) {
-            stringToSearch = stringToSearch.replacingCharacters(in: foundRange, with: "")
-            count += 1
-        }
-        return count
-    }
-    
-}
-
 
 extension UITextView {
     
@@ -101,10 +78,14 @@ class ViewController: UIViewController {
     @IBOutlet var browse: UIButton!
     @IBOutlet var heart: UIButton!
     @IBOutlet var random: UIButton!
-    @IBOutlet var settings: UIButton!
+    @IBAction func loadRandomJoke(_ sender: UIButton) {
+        
+        fetchRandomJoke { (_) in
+            
+        }
+        
+    }
     
-    var jokesLocal = [Joke]()
-    var jokesRemote = [Joke]()
     var jokesFinal = [Joke]()
     var currentJoke: Joke!
     var jokeString = String()
@@ -116,17 +97,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        fetchLocalJokes()
-        fetchRemoteJokes { (success) in
-            if success {
-                
-                self.jokesFinal = self.jokesLocal + self.jokesRemote
-                self.loadRandomJoke()
-                
-            } else {
-                
-                self.jokesFinal = self.jokesLocal
-                
+        fetchRandomJoke { (success) in
+            
+        }
+        
+        for family: String in UIFont.familyNames
+        {
+            print(family)
+            for names: String in UIFont.fontNames(forFamilyName: family) {
+                print("== \(names)")
             }
         }
         
@@ -152,11 +131,7 @@ class ViewController: UIViewController {
         browse.setImage(browseImage, for: .normal)
         browse.imageView?.contentMode = .scaleAspectFit
         
-        let settingsImage = #imageLiteral(resourceName: "settings").withRenderingMode(.alwaysTemplate)
-        settings.setImage(settingsImage, for: .normal)
-        settings.imageView?.contentMode = .scaleAspectFit
-        
-        random.addTarget(self, action: #selector(loadRandomJoke), for: .touchUpInside)
+//        random.addTarget(self, action: #selector(loadRandomJoke), for: .touchUpInside)
         
     }
     
@@ -179,9 +154,6 @@ class ViewController: UIViewController {
         
         browse.tintColor = tintColor
         browse.imageView?.tintColor = tintColor
-        
-        settings.tintColor = tintColor
-        settings.imageView?.tintColor = tintColor
         
     }
     
@@ -211,83 +183,49 @@ class ViewController: UIViewController {
         
     }
     
-    func fetchRemoteJokes(completionHandler: @escaping (Bool) -> ()) {
+    func fetchRandomJoke(completionHandler: @escaping (Bool) -> ()) {
         
-        guard let url = URL(string: "https://www.reddit.com/r/dadjokes/top/.json?count=20&raw_json=1") else { return }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        guard let url = URL(string: "https://icanhazdadjoke.com/") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let session = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
             if error != nil {
+                print("error loading jokes")
+            }
+            
+            guard let data = data else { completionHandler(false); return }
+            
+            print(String(data: data, encoding: .utf8)!)
+            
+            do {
+                let json = try JSON(data: data)
+                let jokeString = json["joke"].stringValue
+                let jokeId = json["id"].stringValue
+                
+                print(json)
+                
+                let newJoke = Joke(id: jokeId, joke: jokeString)
+                
+                self.loadRandomJoke(joke: newJoke)
+            } catch {
                 print("error")
             }
             
-            guard let dataToUse = data else { completionHandler(false); return }
-            
-            let json = JSON(dataToUse)
-            
-            let dataArr = json["data"]["children"].arrayValue
-            
-            for child in dataArr {
-                
-                let score = child["data"]["score"].intValue
-                let isSelfPost = child["data"]["is_self"].boolValue
-                
-                if isSelfPost && score >= 20 {
-                    // only proceed if child is a self post to avoid links and etc...
-                    // set score threshold for score for maximum joke effect
-                    
-                    let title = child["data"]["title"].stringValue
-                    let punchline = child["data"]["selftext"].stringValue
-                    
-                    let newJoke = Joke(setup: title, punchline: punchline)
-                    self.jokesRemote.append(newJoke)
-                    
-                }
-                
-            }
-            
-            completionHandler(true)
-            
         }
         
-        task.resume()
+        session.resume()
         
     }
     
-    func fetchLocalJokes() {
+    func loadRandomJoke(joke: Joke) {
         
-        let filePath = Bundle.main.path(forResource: "jokes", ofType: "json")
-        let jsonData = try? Data(contentsOf: URL(fileURLWithPath: filePath!))
+        currentJoke = joke
+        jokeString = joke.joke
         
-        do {
-            
-            let json = try JSON(data: jsonData!)
-            
-            for joke in json.arrayValue {
-                
-                let title = joke["setup"].stringValue
-                let punchline = joke["punchline"].stringValue
-                
-                let newJoke = Joke(setup: title, punchline: punchline)
-                self.jokesLocal.append(newJoke)
-                
-            }
-            
-        } catch {
-            
-            print("you done fucked up")
-            
-        }
-        
-    }
-    
-    @objc func loadRandomJoke() {
-        
-        let jokes = jokesFinal
-        
-        let newJoke = jokes.random()
-        currentJoke = newJoke
-        
-        jokeString = newJoke.setup + "\n\n" + newJoke.punchline
+        print("loading joke: " + jokeString)
         
         DispatchQueue.main.async {
             let bgColor = UIColor.randomFlat
@@ -307,7 +245,7 @@ class ViewController: UIViewController {
             guard let joke = currentJoke else { return false }
             guard let decodedArr = defaults.object(forKey: "favourites") as? Data else { return false }
             guard let decodedJokes = NSKeyedUnarchiver.unarchiveObject(with: decodedArr) as? [Joke] else { return false }
-            if (decodedJokes.contains(where: { $0.setup == joke.setup } )) {
+            if (decodedJokes.contains(where: { $0.id == joke.id } )) {
                 return true
             } else {
                 return false

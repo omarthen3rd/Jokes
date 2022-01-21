@@ -20,6 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Font Awesome 5 Pro-Solid-900.ttf</string>
+		<string>Font Awesome 5 Pro-Regular-400.ttf</string>
+		<string>Font Awesome 5 Pro-Light-300.ttf</string>
+		<string>TitanOne-Regular.ttf</string>
+		<string>luckiestguy.ttf</string>
+		<string>Lemon-Regular.ttf</string>
+		<string>RammettoOne-Regular.ttf</string>
+		<string>SansitaOne.ttf</string>
+		<string>Chango-Regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -33,15 +45,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>TitanOne-Regular.ttf</string>
-		<string>luckiestguy.ttf</string>
-		<string>Lemon-Regular.ttf</string>
-		<string>RammettoOne-Regular.ttf</string>
-		<string>SansitaOne.ttf</string>
-		<string>Chango-Regular.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
